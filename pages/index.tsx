@@ -48,7 +48,7 @@ import {client} from '../lib/client'
       <div className="flex flex-col items-center justify-center bg-gray-200">
           <div className='flex w-[900px] mt-5'>
             <div className='w-[200px]'>
-                <div className='bg-white p-2 w-[160px]'>Search erms:</div>
+                <div className='bg-white p-2 w-[160px]'>Search terms:</div>
                 <button
                     type="button" 
                     className='bg-white p-1 w-[60px] mt-8'
