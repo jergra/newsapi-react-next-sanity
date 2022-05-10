@@ -47,6 +47,7 @@ the files there, then run 'sanity init', answer some questions,
 then run 'sanity start', add some new content using the interface.
 The projectId has now changed.  Put the new project id into lib/client
 in the root. A new API token is also needed, which will go in .env.
+Therefore the environment variables at Vercel also needs to be updated.
 Sanity Studio also needs to be redeployed. cd into sanity and run 'sanity deploy'.
 'sanity help' will bring up help.
 Run 'npm run dev' in the root.
