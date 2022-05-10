@@ -1,16 +1,16 @@
 export default {
-    name: 'terms',
-    title: 'Terms',
+    name: 'choices',
+    title: 'Choices',
     type: 'document',
     fields: [
         {
-            name: 'original',
-            title: 'Original',
+            name: 'random',
+            title: 'Random',
             type: 'string',
         },
         {
-            name: 'current',
-            title: 'Current',
+            name: 'custom',
+            title: 'Custom',
             type: 'string',
         },
     ]

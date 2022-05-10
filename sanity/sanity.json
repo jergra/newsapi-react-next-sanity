@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "news-api-app-next"
-  },
   "api": {
-    "projectId": "auuc9ig6",
+    "projectId": "fafyfyay",
     "dataset": "production"
+  },
+  "project": {
+    "name": "newsapi-react-next-sanity"
   },
   "plugins": [
     "@sanity/base",

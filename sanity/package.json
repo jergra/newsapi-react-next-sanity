@@ -1,5 +1,5 @@
 {
-  "name": "news-api-app-next",
+  "name": "newsapi-react-next-sanity",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -30,6 +30,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/jergra/news-api-app-next.git"
+    "url": "https://github.com/jergra/newsapi-react-next-sanity.git"
   }
 }
