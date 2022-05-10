@@ -48,7 +48,7 @@ const Custom = ({...props}) => {
                 <Link href="/custom">CUSTOM</Link>
             </button>
             <div className='bg-white p-2 w-[160px] mr-5'>Custom term:</div>
-            <div className="bg-white p-2 w-[160px] mr-5">{props.customString}</div>
+            <div className="bg-white p-2 w-[220px] mr-5">{props.customString}</div>
             <button
                 type="button" 
                 className='bg-white p-1 w-[60px]'
