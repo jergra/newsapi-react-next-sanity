@@ -38,23 +38,23 @@ const Custom = ({...props}) => {
       <div className="flex flex-col items-center justify-center bg-gray-200">
         <div className='flex mt-10'>
             <button 
-                className="absolute self-start pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-500 rounded left-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-500 rounded left-4 top-4"
             >
                 <Link href="/">RANDOM</Link>
             </button>
             <button 
-                className="absolute self-start pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded right-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded right-4 top-4"
             >
                 <Link href="/custom">CUSTOM</Link>
             </button>
-            <div className='bg-white p-2 w-[160px] mr-5'>Search term:</div>
-            <div className="bg-white p-2 w-[220px] mr-5">{props.customString}</div>
+            <div className='bg-white p-2 w-[160px] mr-5 rounded'>Search term:</div>
+            <div className="bg-white p-2 w-[220px] mr-5 rounded">{props.customString}</div>
             <button
                 type="button" 
-                className='bg-white p-1 w-[60px]'
+                className='h-7 pb-1 pt-1 pl-3 pr-3 mt-1.5 text-sm font-bold text-white bg-teal-700 rounded'
             >
                 <a  href='https://newsapi.sanity.studio/desk' target="_blank">
-                    Edit
+                    EDIT
                 </a>
             </button>
         </div>

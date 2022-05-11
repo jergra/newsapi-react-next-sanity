@@ -38,28 +38,17 @@ const Home = ({...props}) => {
 
       <div className="flex flex-col items-center justify-center bg-gray-200">
             <button 
-                className="absolute self-start pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded left-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded left-4 top-4"
             >
                 <Link href="/">RANDOM</Link>
             </button>
             <button 
-                className="absolute self-start pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-500 rounded right-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-500 rounded right-4 top-4"
             >
                 <Link href="/custom">CUSTOM</Link>
             </button>
           <div>
-            <div className='flex w-[1200px] mt-20'>
-                <div>
-                    <div className='w-20 p-2 mr-5 bg-white'>Random terms:</div>
-                    <button
-                        type="button" 
-                        className='bg-white p-1 w-[60px] mt-8'
-                    >
-                        <a  href='https://newsapi.sanity.studio/desk' target="_blank">
-                            Edit
-                        </a>
-                    </button>
-                </div>
+            <div className='flex w-full mt-20'>
                 <div className='flex flex-wrap w-[1000px] bg-white px-3 py-2'>
                     {
                         props.terms.map((term: any, index: any) => (
@@ -74,10 +63,18 @@ const Home = ({...props}) => {
                 </div>
             </div>
                 <div className='flex items-center justify-center mt-10'>
-                    <div className='p-2 mr-10 bg-white'>This search:</div>
-                    <div className='p-2 bg-white'>
+                    <div className='p-2 mr-10 bg-white rounded'>This search:</div>
+                    <div className='p-2 mr-10 bg-white rounded'>
                         {props.query}{props.inputted}
                     </div>
+                    <button
+                        type="button" 
+                        className='pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded'
+                    >
+                        <a  href='https://newsapi.sanity.studio/desk' target="_blank">
+                            EDIT TERMS
+                        </a>
+                    </button>
                 </div>
         </div>
         
