@@ -54,7 +54,7 @@ const Custom = ({...props}) => {
                 className='h-7 pb-1 pt-1 pl-3 pr-3 mt-1.5 text-sm font-bold text-white bg-teal-700 rounded'
             >
                 <a  href='https://newsapi.sanity.studio/desk' target="_blank">
-                    EDIT
+                    CHANGE
                 </a>
             </button>
         </div>
