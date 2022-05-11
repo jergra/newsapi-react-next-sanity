@@ -63,8 +63,8 @@ const Home = ({...props}) => {
                 </div>
             </div>
                 <div className='flex items-center justify-center mt-10'>
-                    <div className='p-2 mr-10 bg-white rounded'>This search:</div>
-                    <div className='p-2 mr-10 bg-white rounded'>
+                    <div className='p-2 mr-10 bg-white'>This search:</div>
+                    <div className='p-2 mr-10 bg-white'>
                         {props.query}{props.inputted}
                     </div>
                     <button
