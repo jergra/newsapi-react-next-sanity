@@ -38,12 +38,14 @@ const Home = ({...props}) => {
 
       <div className="flex flex-col items-center justify-center bg-gray-200">
             <button 
-                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded left-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 
+                    rounded left-4 top-4 border-2 border-teal-700"
             >
                 <Link href="/">RANDOM</Link>
             </button>
             <button 
-                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-500 rounded right-4 top-4"
+                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-teal-700 rounded 
+                    right-4 top-4 border-2 border-teal-700 hover:bg-teal-700 hover:text-white"
             >
                 <Link href="/custom">CUSTOM</Link>
             </button>
