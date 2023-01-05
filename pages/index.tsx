@@ -90,7 +90,7 @@ const Home = ({...props}) => {
                         <div className="px-4 mb-2 text-sm">{newsItem.description}</div>
                         <div className="flex justify-between">
                             <div className="px-4 mb-3 text-gray-500">{newsItem.source.name}</div>
-                            <div className="px-4 mb-3 text-sm text-gray-500">{newsItem.publishedAt.slice(0,10)}</div>
+                            <div className="px-4 mb-3 text-xs text-gray-500">{newsItem.publishedAt.slice(0,10)}</div>
                         </div>
                     </div>
                 ))
