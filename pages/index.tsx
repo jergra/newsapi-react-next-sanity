@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import {client} from '../lib/client'
+import { AiOutlineGithub } from 'react-icons/ai'
 
 
 const Home = ({...props}) => {
@@ -36,18 +37,28 @@ const Home = ({...props}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col items-center justify-center bg-gray-200">
-            <button 
-                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 border-2 border-teal-700 rounded left-4 top-4"
-            >
-                <Link href="/">RANDOM</Link>
-            </button>
-            <button 
-                className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-teal-700 border-2 border-teal-700 rounded right-4 top-4 hover:bg-teal-700 hover:text-white"
-            >
-                <Link href="/custom">CUSTOM</Link>
-            </button>
-          <div>
+    <div className="flex flex-col items-center justify-center bg-gray-200">
+        <button 
+            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white 
+                bg-teal-700 border-2 border-teal-700 rounded left-4 top-4"
+        >
+            <Link href="/">RANDOM</Link>
+        </button>
+        <button 
+            className="mt-4 text-teal-700"
+        >
+            <a href="https://github.com/jergra/newsapi-react-next-sanity" target="_blank">
+                <AiOutlineGithub size={40} />
+            </a>
+        </button>   
+        <button 
+            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-teal-700 
+                border-2 border-teal-700 rounded right-4 top-4 hover:bg-teal-700 
+                hover:text-white"
+        >
+            <Link href="/custom">CUSTOM</Link>
+        </button>
+        <div>
             <div className='flex w-full mt-20'>
                 <div className='flex flex-wrap w-[1000px] bg-white px-3 py-2'>
                     {
@@ -62,22 +73,21 @@ const Home = ({...props}) => {
                     }
                 </div>
             </div>
-                <div className='flex items-center justify-center mt-10'>
-                    <div className='p-2 mr-10 bg-white'>This search:</div>
-                    <div className='p-2 mr-10 bg-white'>
-                        {props.query}{props.inputted}
-                    </div>
-                    <button
-                        type="button" 
-                        className='pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded'
-                    >
-                        <a  href='https://newsapi.sanity.studio/desk' target="_blank">
-                            EDIT TERMS
-                        </a>
-                    </button>
+            <div className='flex items-center justify-center mt-10'>
+                <div className='p-2 mr-10 bg-white'>This search:</div>
+                <div className='p-2 mr-10 bg-white'>
+                    {props.query}{props.inputted}
                 </div>
+                <button
+                    type="button" 
+                    className='pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 rounded'
+                >
+                    <a  href='https://newsapi.sanity.studio/desk' target="_blank">
+                        EDIT TERMS
+                    </a>
+                </button>
+            </div>
         </div>
-        
         <div className="flex flex-col justify-center w-2/3 m-auto mt-10">
              {
                 props.articles.articles.map((newsItem: any, index: any) => (
