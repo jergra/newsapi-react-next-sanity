@@ -39,8 +39,7 @@ const Home = ({...props}) => {
 
     <div className="flex flex-col items-center justify-center bg-gray-200">
         <button 
-            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white 
-                bg-teal-700 border-2 border-teal-700 rounded left-4 top-4"
+            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-white bg-teal-700 border-2 border-teal-700 rounded left-4 top-4"
         >
             <Link href="/">RANDOM</Link>
         </button>
@@ -48,13 +47,11 @@ const Home = ({...props}) => {
             className="mt-4 text-teal-700"
         >
             <a href="https://github.com/jergra/newsapi-react-next-sanity" target="_blank">
-                <AiOutlineGithub size={40} />
+                <AiOutlineGithub size={30} />
             </a>
         </button>   
         <button 
-            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-teal-700 
-                border-2 border-teal-700 rounded right-4 top-4 hover:bg-teal-700 
-                hover:text-white"
+            className="absolute pt-1 pb-1 pl-3 pr-3 text-sm font-bold text-teal-700 border-2 border-teal-700 rounded right-4 top-4 hover:bg-teal-700 hover:text-white"
         >
             <Link href="/custom">CUSTOM</Link>
         </button>
