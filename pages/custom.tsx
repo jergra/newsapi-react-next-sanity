@@ -31,7 +31,7 @@ const Custom = ({...props}) => {
     return (
     <>
       <Head>
-        <title>NewsAPI Articles</title>
+        <title>NewsAPI Articles - Custom</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
         
@@ -71,7 +71,10 @@ const Custom = ({...props}) => {
                         <div className="mb-2"><a href={newsItem.url} target='_blank' rel='noreferrer'><img src={newsItem.urlToImage} alt="" /></a></div>
                         <div className="px-4 mb-2 font-semibold"><a href={newsItem.url} target='_blank' rel='noreferrer'>{newsItem.title}</a></div>
                         <div className="px-4 mb-2 text-sm">{newsItem.description}</div>
-                        <div className="px-4 mb-3 text-gray-500">{newsItem.source.name}</div>
+                        <div className="flex justify-between">
+                            <div className="px-4 mb-3 text-gray-500">{newsItem.source.name}</div>
+                            <div className="px-4 mb-3 text-xs text-gray-500">{newsItem.publishedAt.slice(0,10)}</div>
+                        </div>
                     </div>
                 ))
             }

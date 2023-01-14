@@ -33,7 +33,7 @@ const Home = ({...props}) => {
     return (
     <>
       <Head>
-        <title>NewsAPI Articles</title>
+        <title>NewsAPI Articles - Random</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
